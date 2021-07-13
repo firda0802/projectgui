@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C58625A-FACC-48AF-B873-4109C94B6F78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectAplikasiAccounting.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectAplikasiAccounting</RootNamespace>
+    <AssemblyName>ProjectAplikasiAccounting</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectAplikasiAccounting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectAplikasiAccounting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.3.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttandanceList.Designer.vb">
+      <DependentUpon>AttandanceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AttandanceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyOrSale.Designer.vb">
+      <DependentUpon>BuyOrSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyOrSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardKedua.Designer.vb">
+      <DependentUpon>DashboardKedua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardKedua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUtama.Designer.vb">
+      <DependentUpon>DashboardUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuKedua.Designer.vb">
+      <DependentUpon>MenuKedua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuKedua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportData.Designer.vb">
+      <DependentUpon>ReportData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama.Designer.vb">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewEmployeeInput.Designer.vb">
+      <DependentUpon>NewEmployeeInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployeeInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentSlip.Designer.vb">
+      <DependentUpon>PaymentSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductData.Designer.vb">
+      <DependentUpon>ProductData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDatabase.Designer.vb">
+      <DependentUpon>ViewDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AttandanceList.resx">
+      <DependentUpon>AttandanceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyOrSale.resx">
+      <DependentUpon>BuyOrSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardKedua.resx">
+      <DependentUpon>DashboardKedua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUtama.resx">
+      <DependentUpon>DashboardUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKedua.resx">
+      <DependentUpon>MenuKedua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUtama.resx">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployeeInput.resx">
+      <DependentUpon>NewEmployeeInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentSlip.resx">
+      <DependentUpon>PaymentSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductData.resx">
+      <DependentUpon>ProductData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportData.resx">
+      <DependentUpon>ReportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDatabase.resx">
+      <DependentUpon>ViewDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+#Persiapan Tools Yang Dipakai Untuk Install Aplikasi
+- XAMPP
+#Cara Import Database Di PHPMyAdmin
+- Install Xampp
+- Buka Xampp
+- Aktifkan Apache Dan Mysql
+- Buka Browser
+- Ketik "http://localhost/phpmyadmin/" Di Browser
+- Buat Database Baru Dengan Nama "accounting"
+- Klik Database Yang Sudah Dibuat Tadi, Setelah Masuk Pilih Import
+- Klik Pilih File Cara Database Di Folder AplikasiAccounting -> Database -> Pilih accounting
+- Klik Kirim, Tunggu Sampai Selesai.
+#Cara Install Aplikasi Accounting
+- Masuk Ke Folder InstallAplikasi -> Debug -> Pilih Setup, Klik Kanan Run Administrator
+- Jika Sudah Masuk Installer Klik Next Sampai Finish
+- Aplikasi Sudah Teristall Di Menu Dekstop Komputer Anda
